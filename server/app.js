@@ -1,6 +1,8 @@
 import express from 'express'
 import dotenv from 'dotenv';
 import connectToMongoDB from './src/database/connectDb.js';
+import cookieParser from "cookie-parser";
+app.use(cookieParser());
 
 const app=express(); 
 dotenv.config();
